@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/quiela/node-typescript-api/issues"
   },
-  "homepage": "https://github.com/quiela/node-typescript-api#readme"
+  "homepage": "https://github.com/quiela/node-typescript-api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.14.22",
+    "typescript": "^4.1.3"
+  }
 }
